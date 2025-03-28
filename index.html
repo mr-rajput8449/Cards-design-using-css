@@ -4,61 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <style>
+
+
         *{
-            margin:0px;
+            margin: 0px;
             padding: 0px;
             box-sizing: border-box;
         }
+
+
+        html,
+        body{
+            font-family: "Inter Tight", sans-serif;
+             }
+
         .container{
             width: 100%;
-            height: 800px;
-            background-color: #0093E9;
-            background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+            height: 1200px;
+            background-color: #8BC6EC;
+            background-image: linear-gradient(135deg, #1f85aa 0%, #cf822a 100%);
+            overflow-x: auto;
             display: flex;
             justify-content: center;
             align-items: center;
-
+        }
+        .main-container{
+            width: 950px;
+            height:450px ;
+            background-color: rgb(140, 5, 128);
+            display: flex;
+            border-radius: 20px;
+            cursor: pointer;
+          
+        }
+      
+           
+       @media (hover){
+            .main-container:hover{
+                box-shadow: 0px 0px 35px  rgb(0, 0, 0);
+              transition: ease-in-out;
+             transition-duration: 250ms;
+             transform: scale(1.1);
+            
+            }
         }
 
-        .cards{
-            width: 300px;
-            height: 400px;
-            background-color: white;
-            border-radius: 20px;
+        
+        .leftbox{
+            width: 475px;
+            height: 450px;
             display: flex;
             flex-direction: column;
-            padding: 10px;
-            margin: 10px;
-            align-items: center;
+            margin-left: 60px;
+            margin-right: 40px;
         }
-        
-       .cards img{
-            width: 280px;
-            height: 200px;
-            border-radius: 10px;
-            
-           
-           
+        .content h2{
+            padding-top: 40px;
+            margin-bottom:15%;
+            font-size: 2rem;
+            color: hsl(0, 0%, 95%);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
         }
 
-        .cards h2{
-            padding: 10px;
-            font-size: 20px;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        .content p{
+            padding-bottom: 70px;
+            font-size: 1.4rem;
+            color: #f5f5f5 ;
+            line-height: 1.2;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
-          
+        
+        .report{
+            color: white;
+            display: flex;
+            justify-content: space-between; 
+            font-size: 1.4rem;
+        }
+
+       #div1-0{
+            color: rgb(255, 255, 255);
+            font-size: 1.3rem;
+            font-weight: 450;
+        }
+
+        .div1-1{
+            color: white;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+       .rightbox img{
+            width: 475px;
+            height: 450px;
+            border-radius: 20px;
+        }
+
+
     </style>
 </head>
 <body>
-   <div class="container">
-        <div class="cards">
-        
-                <img src="img1.jpeg" alt="">
-            <h2>Improve your front end skills by building projects</h2>
-            
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, numquam.</p>
+    <div class="container">
+        <div class="main-container">
+            <div class="leftbox">
+                <div class="content">
+                    <h2>Get insights that help your business grow</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae blanditiis, laborum ullam omnis  obcaecati non quibusdam error quos laboriosam cupiditate dolorem.</p>
+                </div>
+                <div class="report">
+                    <div id="div1-0">
+                        10K+
+                        <div class="div1-1">
+                            Comments
+                        </div>
+                    </div>
+                    <div id="div1-0">
+                        214
+                        <div class="div1-1">
+                            Paid Users
+                        </div>
+                    </div>
+                    <div id="div1-0">
+                        12M+
+                        <div class="div1-1">
+                            Views
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <div class="rightbox">
+            <img src="icon.jpg" alt="">
+           </div>
+
         </div>
-   </div>
+    </div>
 </body>
 </html>
